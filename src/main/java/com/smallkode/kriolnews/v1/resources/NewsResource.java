@@ -34,6 +34,6 @@ public class NewsResource {
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity<?> getAllNewsFromWebSite() throws IOException {
 
-        return new ResponseEntity(newsServices.getNews(), HttpStatus.FOUND);
+        return new ResponseEntity(newsServices.getNews(), HttpStatus.OK);
     }
 }
