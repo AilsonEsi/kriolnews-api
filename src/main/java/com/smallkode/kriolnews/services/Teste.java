@@ -20,6 +20,7 @@ import org.jsoup.select.Elements;
  */
 public class Teste {
     
+    /*
      private final String SITE = "https://anacao.cv/category/politica/"; 
     
     public void getNews() throws IOException{
@@ -37,6 +38,8 @@ public class Teste {
     
     public static void main(String[] args) throws IOException {
         
-        new Teste().getNews();
+        
+new Teste().getNews();
     }
+*/
 }
