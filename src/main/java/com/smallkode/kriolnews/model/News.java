@@ -15,12 +15,20 @@ import jdk.nashorn.internal.objects.annotations.Setter;
 public class News {
 
     private String title;
+    private String content;
+    private String image;
+    private String category;
+    private String link;
 
     public News() {
     }
-    
-    public News(String title) {
+
+    public News(String title, String content, String image, String category, String link) {
         this.title = title;
+        this.content = content;
+        this.image = image;
+        this.category = category;
+        this.link = link;
     }
 
     public String getTitle() {
@@ -30,6 +38,41 @@ public class News {
     public void setTitle(String title) {
         this.title = title;
     }
-    
-    
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    @Override
+    public String toString() {
+        return "News{" + "title=" + title + ", content=" + content + ", image=" + image + ", category=" + category + ", link=" + link + '}';
+    }
 }
